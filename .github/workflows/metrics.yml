@@ -15,3 +15,11 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
+          # Options
+          user: eculver
+          template: classic
+          base: header, activity, community, repositories, metadata
+          plugin_followup: yes
+          plugin_followup_sections: repositories
+          repositories: 1000
+          repositories_forks: yes
